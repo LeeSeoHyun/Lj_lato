@@ -30,5 +30,6 @@ public class Player : MonoBehaviour
     void OnMouseUpAsButton()
     {
         Info.Gold += Info.GoldPerClick;
+        GetComponent<Rigidbody2D>().AddForce(new Vector2(0.0f, 1500.0f));
     }
 }
